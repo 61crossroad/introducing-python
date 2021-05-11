@@ -1,0 +1,18 @@
+# Mac
+.DS_Store
+
+# python
+_env/
+env/
+__pycache__/
+*.pyc
+
+# pyenv
+.python-version
+
+# django
+properties.json
+db.sqlite3
+
+# PyCharm
+.idea/
