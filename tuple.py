@@ -1,14 +1,3 @@
-# This is a sample Python script.
-
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
-
-
 def create_tuple():
     empty_tuple = ()
     print(empty_tuple)
@@ -68,12 +57,3 @@ def use_tuple():
     print(id(t1))
     t1 += t2
     print(id(t1))
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm. Today is 2021.05.11.')
-    # create_tuple()
-    use_tuple()
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
