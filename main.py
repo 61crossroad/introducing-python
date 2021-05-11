@@ -12,7 +12,7 @@ def print_hi(name):
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     print_hi('PyCharm.\n - 2021.05.11.\n')
-    import list
-    list.use_list()
+    import dictionary
+    dictionary.access_dict()
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
