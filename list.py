@@ -166,3 +166,60 @@ def use_list():
     numbers.sort(reverse=True)
     print(numbers)
     print(len(numbers))
+
+
+def assign():
+    a = [1, 2, 3]
+    b = a
+    a[0] = 'surprise'
+    print(b)
+
+
+def copies():
+    a = [1, 2, 3]
+    b = a.copy()
+    c = list(a)
+    d = a[:]
+    a[0] = 'integer lists are boring'
+    print(a)
+    print(b)
+
+    a = [1, 2, [8, 9]]
+    b = a.copy()
+    c = list(a)
+    d = a[:]
+    a[2][1] = 10
+    print(a)
+    print(d)
+
+    print('## copy.deepcopy()')
+    import copy
+    a = [1, 2, [8, 9]]
+    b = copy.deepcopy(a)
+    a[2][1] = 10
+    print(a)
+    print(b)
+
+
+def compare():
+    a = [7, 2]
+    b = [7, 2, 9]
+    print(a == b)
+    print(a <= b)
+    print(a < b)
+    a = [3, 2]
+    b = [1, 2, 3]
+    print(a > b)
+
+
+def iteration():
+    cheeses = ['brie', 'gjetost', 'havarti']
+    for cheese in cheeses:
+        print(cheese)
+
+    for cheese in cheeses:
+        if cheese.startswith('g'):
+            print("I won't eat anything that starts with 'g'")
+            break
+        else:
+            print(cheese)
