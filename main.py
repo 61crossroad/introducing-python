@@ -15,7 +15,7 @@ if __name__ == '__main__':
     print_hi('PyCharm.\n - 2021.05.18.\n')
 
     import list
-    list.iteration()
+    list.list_of_list()
     # import dictionary
     # dictionary.access_dict()
 
