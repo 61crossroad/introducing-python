@@ -233,3 +233,82 @@ def iteration():
             print(cheese)
     else:
         print("Didn't find anything that started with 'x'")
+
+    cheeses = []
+    for cheese in cheeses:
+        print('This shop has some lovely', cheese)
+        break
+    else:
+        print('This is not much of a cheese shop, is it?')
+
+    days = ['Monday', 'Tuesday', 'Wednesday']
+    drinks = ['coffee', 'tea', 'beer']
+    fruits = ['banana', 'orange', 'peach']
+    desserts = ['tiramisu', 'ice cream', 'pie', 'pudding']
+    for day, drink, fruit, dessert in zip(days, drinks, fruits, desserts):
+        print(day, ": drink", drink, "- eat", fruit, "- enjoy", dessert)
+
+    english = 'Monday', 'Tuesday', 'Wednesday'
+    french = 'Lundi', 'Mardi', 'Mercredi'
+    print(list(zip(english, french)))
+    print(dict(zip(english, french)))
+
+
+def comprehension():
+    number_list = []
+    number_list.append(1)
+    number_list.append(2)
+    number_list.append(3)
+    number_list.append(4)
+    number_list.append(5)
+    print(number_list)
+
+    number_list = []
+    for number in range(1, 6):
+        number_list.append(number)
+    print(number_list)
+
+    number_list = list(range(1, 6))
+    print(number_list)
+
+    number_list = [number for number in range(1, 6)]
+    print(number_list)
+
+    number_list = [number - 1 for number in range(1, 6)]
+    print(number_list)
+
+    a_list = [number for number in range(1, 6) if number % 2 == 1]
+    print(a_list)
+
+    a_list = []
+    for number in range(1, 6):
+        if number % 2 == 1:
+            a_list.append(number)
+    print(a_list)
+
+    rows = range(1, 4)
+    cols = range(1, 3)
+    for row in rows:
+        for col in cols:
+            print(row, col)
+
+    cells = [(row, col) for row in rows for col in cols]
+    for cell in cells:
+        print(cell)
+
+    cells = [(row, col) for row in range(1, 3) for col in range(1, 4)]
+    for cell in cells:
+        print(cell)
+    for row, col in cells:
+        print(row, col)
+
+
+def list_of_list():
+    small_birds = ['hummingbird', 'finch']
+    extinct_birds = ['dodo', 'passenger pigeon', 'Norwegian Blue']
+    carol_birds = [3, 'French hens', 2, 'turtledoves']
+    all_birds = [small_birds, extinct_birds, 'macaw', carol_birds]
+    print(all_birds)
+    print(all_birds[0])
+    print(all_birds[1])
+    print(all_birds[1][0])
