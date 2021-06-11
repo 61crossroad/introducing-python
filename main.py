@@ -15,11 +15,11 @@ if __name__ == '__main__':
     # print_hi('PyCharm.\n - 2021.05.18.\n')
     print_hi('PyCharm.\n - 2021.06.11.\n')
 
-    # import dictionary
-    # dictionary.iteration()
+    import dictionary
+    dictionary.dictionary_comprehension()
 
-    import list
-    list.list_comprehension()
+    # import list
+    # list.list_comprehension()
 
     # from rx_py_hello_world import main
     # main()

@@ -126,3 +126,16 @@ def compare():
 
 
 # def iteration():
+
+
+def dictionary_comprehension():
+    a = {}
+    original = {
+        'i': 'sh',
+        'love': 'jy',
+        'you': 'kang',
+    }
+    # for key, value in original.items():
+    #     a[key] = value
+    a = {key: value for key, value in original.items()}
+    print(a)
