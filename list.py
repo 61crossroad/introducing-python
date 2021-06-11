@@ -312,3 +312,9 @@ def list_of_list():
     print(all_birds[0])
     print(all_birds[1])
     print(all_birds[1][0])
+
+
+# odd int * 2 in comprehension
+def list_comprehension():
+    list = [n * 2 for n in range(1, 10 + 1) if n % 2 == 1]
+    print(list)

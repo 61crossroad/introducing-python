@@ -12,12 +12,14 @@ def print_hi(name):
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     # print_hi('PyCharm.\n - 2021.05.11.\n')
-    print_hi('PyCharm.\n - 2021.05.18.\n')
+    # print_hi('PyCharm.\n - 2021.05.18.\n')
+    print_hi('PyCharm.\n - 2021.06.11.\n')
+
+    # import dictionary
+    # dictionary.iteration()
 
     import list
-    list.list_of_list()
-    # import dictionary
-    # dictionary.access_dict()
+    list.list_comprehension()
 
     # from rx_py_hello_world import main
     # main()
