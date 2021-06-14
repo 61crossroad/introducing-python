@@ -125,17 +125,50 @@ def compare():
     print(a == b)
 
 
-# def iteration():
+def iteration():
+    accusation = {'room': 'ballroom', 'weapon': 'lead pipe', 'person': 'Col. Mustard'}
+    print('[keys]')
+    for card in accusation:
+        print(card)
+
+    print('[values]')
+    for value in accusation.values():
+        print(value)
+
+    print('[items]')
+    for item in accusation.items():
+        print(item, type(item))  # <class 'tuple'>
+
+    for card, contents in accusation.items():
+        print('Card', card, 'has the contents', contents)
 
 
 def dictionary_comprehension():
     a = {}
     original = {
-        'i': 'sh',
-        'love': 'jy',
-        'you': 'kang',
+        'i': 'k',
+        'love': 'j',
+        'you': 'y',
     }
     # for key, value in original.items():
     #     a[key] = value
     a = {key: value for key, value in original.items()}
     print(a)
+    print(type(a))
+
+    word = 'letters'
+    letter_counts = {letter: word.count(letter) for letter in word}
+    print(letter_counts)
+
+    letter_counts = {letter: word.count(letter) for letter in set(word)}
+    print(letter_counts)
+
+    vowels = 'aeiou'
+    word = 'onomatopoeia'
+    vowel_counts = {letter: word.count(letter) for letter in sorted(set(word)) if letter in vowels}
+    print(vowel_counts)
+
+
+if __name__ == '__main__':
+    dictionary_comprehension()
+    # iteration()
